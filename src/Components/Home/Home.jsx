@@ -41,6 +41,7 @@ export default function Home() {
                 <ul className="results-wrapper">
                     <li className="results">Minimum Price: </li>
                     <li className="results">Suggested Price: </li>
+                    <li className="results">Your Price: </li> <input type="number"  name="your-price" min={0} id="your-price" className="input-field" />
                     <li className="results">Incentive at minimum price: </li>
                     <li className="results">Incentive at suggested price: </li>
                 </ul>
