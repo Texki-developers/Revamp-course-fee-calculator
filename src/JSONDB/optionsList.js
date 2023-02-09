@@ -1,4 +1,3 @@
 export default {
-    syllabus: ['CBSE','ICSE','State Syllabus'],
-    
+    syllabus: ['CBSE','ICSE','State Syllabus'],   
 }

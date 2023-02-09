@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.home-page-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+
+    .form-title{
+        font-size: 1.5rem;
+
+    }
+
+    .calculate-form{
+        background: rgba(208, 228, 254, 0.2);
+        width: 30rem;
+        padding: 1rem;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        gap: 1rem;
+    }
+
+    .input-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .input-field{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 5px;
+        background: #fff;
+        border: 2px solid rgba(0,0,0,0.5);
+        font-size: 1rem;
+    }
+    .results-wrapper{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-weight: 600;
+        padding: 0;
+    }
+    .subject-hour-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .home-page-container{
+        padding: 1rem;
+        padding-top: 4rem;
+        
+        .form-title{
+            font-size: 1.1rem;
+    
+        }
+    
+        .calculate-form{
+            background: rgba(208, 228, 254, 0.2);
+            width: 100%;
+            border-radius: 8px;
+            gap: 0.5rem;
+        }
+    
+        .input-field{
+            font-size: 0.9rem;
+        }
+
+        .label-title{
+            font-size: 0.9rem;
+        }
+
+        .results{
+            font-size: 0.9rem;
+        }
+    }
+}
