@@ -18,6 +18,7 @@ export default function SubjectHourWrapper({
         );
         console.log(findID);
         if (findID !== -1) {
+          console.log(data,'this is data');
           prev.classesPerWeek.splice(findID, 1, data);
         } else {
           prev.classesPerWeek.push(data);
