@@ -16,7 +16,7 @@ export default function SalesCalculator() {
     if (type === 'O') {
       pricePerHour = 750;
     } else if (type === 'S') {
-      pricePerHour = 350;
+      pricePerHour = 300;
     } else {
       throw new Error('Invalid course type');
       
@@ -37,7 +37,7 @@ export default function SalesCalculator() {
       <form className="calculate-form">
         <h1 className="form-title">Revamp course price calculator</h1>
         <label htmlFor="main" className="input-wrapper">
-          <span className="label-title">Code</span>
+          <span className="label-title">Product Code</span>
           <input type="text" onChange={processCode} name="main" min={0} id="main" className="input-field" />
         </label>
         <ul className="results-wrapper">
