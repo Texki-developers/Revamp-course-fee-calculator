@@ -16,10 +16,12 @@ export default function SubjectHourWrapper({
         let findID = prev.classesPerWeek.findIndex(
           (item) => item.id === data.id
         );
+        let RData = prev.classesPerWeek[findID]
+        
         console.log(findID);
         if (findID !== -1) {
           console.log(data,'this is data');
-          prev.classesPerWeek.splice(findID, 1, data);
+          prev.classesPerWeek.splice(findID, 1, Object.assign({}, RData, data));
         } else {
           prev.classesPerWeek.push(data);
         }
