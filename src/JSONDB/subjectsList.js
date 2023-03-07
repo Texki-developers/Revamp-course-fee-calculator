@@ -8,7 +8,7 @@ export default [
     {
         subject: 'English',
         value:'EN',
-        dValue: 3,
+        dValue: 1,
         id:"2"
     },
     {
